@@ -122,7 +122,7 @@ class Command {
 		 * Whether the command can only be run in a guild channel
 		 * @type {boolean}
 		 */
-		this.guildOnly = !!info.guildOnly;
+		this.guildOnly = true;
 
 		/**
 		 * Whether the default command handling is enabled for the command
