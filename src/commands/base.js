@@ -134,7 +134,7 @@ class Command {
 		 * Options for throttling command usages
 		 * @type {?ThrottlingOptions}
 		 */
-		this.throttling = info.throttling || { usages: 2, duration: 20 };
+		this.throttling = info.throttling || { usages: 1, duration: 5 };
 
 		/**
 		 * The argument collector for the command
