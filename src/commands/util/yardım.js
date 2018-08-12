@@ -48,6 +48,27 @@ module.exports = class HelpCommand extends Command {
 		groups.push("profil-sistemi"); 
 		groups.push("gizli-komutlar"); 
 		groups.push("puanlı-komutlar"); 
+			groups.push("+genel"); 
+		groups.push("+anakomutlar"); 
+		groups.push("+moderatör"); 
+		groups.push("+geliştirici");
+	        groups.push("+eğlence"); 
+		groups.push("+fotoğraf-efektleri"); 
+		groups.push("+müzik"); 
+		groups.push("+profil-sistemi"); 
+		groups.push("+gizli-komutlar"); 
+		groups.push("+puanlı-komutlar"); 
+            if (args.icerik == "+genel") group = this.client.registry.groups.get("util");
+	    if (args.icerik == "+moderatör") group = this.client.registry.groups.get("grup2");
+	    if (args.icerik == "+anakomutlar") group = this.client.registry.groups.get("grup1");
+	    if (args.icerik == "+geliştirici") group = this.client.registry.groups.get("admin");
+	    if (args.icerik == "+eğlence") group = this.client.registry.groups.get("grup3");
+	    if (args.icerik == "+fotoğraf-efektleri") group = this.client.registry.groups.get("grup4");
+            if (args.icerik == "+müzik") group = this.client.registry.groups.get("grup5");
+            if (args.icerik == "+profil-sistemi") group = this.client.registry.groups.get("grup6");
+             if (args.icerik == "+gizli-komutlar") group = this.client.registry.groups.get("grup7");
+            if (args.icerik == "+puanlı-komutlar") group = this.client.registry.groups.get("grup8");
+
             if (args.icerik == "genel") group = this.client.registry.groups.get("util");
 	    if (args.icerik == "moderatör") group = this.client.registry.groups.get("grup2");
 	    if (args.icerik == "anakomutlar") group = this.client.registry.groups.get("grup1");
